@@ -2,4 +2,4 @@ ReproSwipe is repro of SwipeView challenge. In summary while event fires on swip
 
 This is taken from a larger project and just shows subset of problem. Hoping to figure this out with help of others as needed. JB
 
-![image](https://user-images.githubusercontent.com/13039619/166061267-d7a6e922-ac17-4408-bafb-74f357c45aa5.png)
+![image](https://user-images.githubusercontent.com/13039619/166061860-644329b4-4055-4000-b84e-7dda6c470351.png)
