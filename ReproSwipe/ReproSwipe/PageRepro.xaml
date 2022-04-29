@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReproSwipe.PageRepro">
+    <ContentPage.Content>
+        <Frame Grid.Row="0"  HasShadow="True" BorderColor="#D7DAE6" Padding="4" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="20,20,20,20">
+            <CollectionView x:Name="cvSights" SelectionMode="Single" VerticalOptions="Start">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="1" VerticalItemSpacing="5" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <SwipeView x:Name="svSights">
+                            <SwipeView.RightItems>
+                                <SwipeItems>
+                                    <SwipeItem Text="Delete" BackgroundColor="LightPink" Invoked="OnDeleteRequest" />
+                                </SwipeItems>
+                            </SwipeView.RightItems>
+
+                            <Grid HeightRequest="60" WidthRequest="300" BackgroundColor="#D7DAE6">
+                                <Label Grid.Column="0" Text="{Binding UTCTimeTaken}" FontSize="18"  />
+                                <Label Grid.Column="1" Text="{Binding FormattedAngle}" FontSize="18" HorizontalTextAlignment="Center" />
+                            </Grid>
+
+                        </SwipeView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>
