@@ -1,4 +1,4 @@
-ReproSwipe is repro of SwipeView challenge. In summary while event fires on swipe, I'm unable to identify which item was acutally swapped this in turn prevents removing correct item from data set. The sender object coming back to the OnDeleteRequest handler is null. What hooks can be used to identify item that was swiped?
+ReproSwipe is repro of SwipeView challenge. In summary while event fires on swipe, I'm unable to identify which item in the SwipeView list was acutally swiped this in turn prevents removing correct item from data set. The sender object coming back to the OnDeleteRequest handler is null. What hooks can be used to identify item that was swiped?
 
 This is taken from a larger project and just shows subset of problem. Hoping to figure this out with help of others as needed. JB
 
