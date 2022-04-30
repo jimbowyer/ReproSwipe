@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using ReproSwipe.Models;
@@ -9,16 +8,12 @@ namespace ReproSwipe
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PageRepro : ContentPage
     {
-        private DateTime mUtcTime = DateTime.Now;
-        private List<Sight> mSightList = new List<Sight>(); //sight list
-
         public PageRepro()
         {
             InitializeComponent();
             BindingContext = new PageReproModel();
-
+           
         }
-
     } //class PageRpro
 
     public class Sight
@@ -39,7 +34,6 @@ namespace ReproSwipe
 
         public DateTime TimeTaken
         {
-            //private DateTime lastReadingTime;
             get { return _taken; }
             set { _taken = value; }
         }
@@ -68,7 +62,6 @@ namespace ReproSwipe
                 string formatme = _degrees.ToString() + "°" + _minutes.ToString() + "'";
                 return formatme;
             }
-
         }
 
     } //class Sight
